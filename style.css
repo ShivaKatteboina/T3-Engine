@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5d);
+    min-height: 100vh;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+body h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #ffcb74;
+    text-shadow: 2px 2px #000;
+}
+
+.container {
+    width: 90vmin;
+    height: 70vmin;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box {
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    color: #ff6b6b;
+    border: none;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.win {
+    background-color: #4caf50 !important;
+    color: #fff !important;
+    font-weight: bold;
+    box-shadow: 0 0 1.2rem rgba(72, 239, 149, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+.reset, .new {
+    width: 25vmin;
+    height: 6vmin;
+    background-color: #ffcb74;
+    border: none;
+    color: #2d2d2d;
+    font-size: 2.5vmin;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reset:hover, .new:hover {
+    background-color: #ffa500;
+    color: #000;
+    cursor: pointer;
+}
+
+.msg-winner {
+    font-size: 2.2rem;
+    height: auto;
+    color: #72e8f2;
+    margin-top: 1rem;
+    text-shadow: 1px 1px #000;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
